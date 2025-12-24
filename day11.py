@@ -1,8 +1,3 @@
-import sys
-
-# Increase recursion depth for graphs with many nodes
-sys.setrecursionlimit(20000)
-
 def solve():
     adj_list = {}
     with open('input11.txt', 'r') as f:
@@ -53,5 +48,4 @@ def solve():
     result2 = count_constrained_paths("svr", False, False)
     print("part 2:", result2)
 
-if __name__ == "__main__":
-    solve()
+solve()
